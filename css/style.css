@@ -1,6 +1,6 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: black;
+  color: #1A1A1A;
 }
 
 .brand_text {
@@ -20,16 +20,16 @@ body {
 body .parent_container {
   margin: 0;
   margin-inline: auto;
-  background-color: white;
+  background-color: #F8F8FF;
   max-width: 1440px;
 }
 body .parent_container .header {
   padding-inline: 10px;
-  background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90px;
+  background: linear-gradient(120deg, #0077B6 70%, #FFD166 30%);
 }
 body .parent_container .header nav ul {
   display: flex;
@@ -38,6 +38,7 @@ body .parent_container .header nav ul {
 body .parent_container .header nav ul a {
   margin-inline: 10px;
   text-decoration: none;
+  font-size: 16px;
 }
 body .parent_container .header nav ul a li {
   list-style-type: none;
@@ -50,8 +51,8 @@ body .parent_container .hero_container {
   padding-inline: 10px;
 }
 body .parent_container .footer {
-  background-color: black;
-  color: white;
+  background-color: #1A1A1A;
+  color: #F8F8FF;
 }
 body .parent_container .footer .footer_elements_container {
   display: flex;
@@ -59,7 +60,7 @@ body .parent_container .footer .footer_elements_container {
   align-items: center;
 }
 body .parent_container .footer .footer_elements_container p {
-  color: white;
+  color: #F8F8FF;
 }
 body .parent_container .footer .footer_elements_container nav ul {
   display: flex;
@@ -69,6 +70,6 @@ body .parent_container .footer .footer_elements_container nav ul a {
   margin-inline: 10px;
 }
 body .parent_container .footer .footer_elements_container nav ul a li {
-  color: white;
+  color: #F8F8FF;
   list-style: none;
 }/*# sourceMappingURL=style.css.map */
