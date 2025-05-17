@@ -1,4 +1,81 @@
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
 
+.brand_text {
+    font-weight: bold;
+    font-size: 30px;
+    margin-block: 0px;
+}
+
+.panel_title {
+    text-align: center;
+}
+
+
+body {
+    background-color: grey;
+    margin: 0;
+    .parent_container {
+        margin: 0;
+        margin-inline: auto;
+        background-color: white;
+        max-width: 1440px;
+        .header {
+            padding-inline: 10px;
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    a {
+                        margin-inline: 10px;
+                        text-decoration: none;
+                        li {
+                            list-style-type: none;
+                        }
+                    }
+                }
+            }
+        }
+        .hero_container {
+            height: 88dvh;
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            padding-inline: 10px;
+            .hero_container_element_container {
+            }
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            .footer_elements_container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    color: white;
+                }
+                nav {
+                    ul {
+                        display: flex;
+                        align-items: center;
+                        a {
+                            margin-inline: 10px;
+                            li {
+                                color: white;
+                                list-style: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
