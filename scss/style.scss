@@ -18,13 +18,15 @@
 
 
 body {
-    background-color: grey;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 95%), url('../assets/images/body_bg.jpg');
+    background-attachment: fixed;
     margin: 0;
     .parent_container {
         margin: 0;
         margin-inline: auto;
         background-color: $white;
         max-width: 1440px;
+        outline: solid black 2px;
         .header {
             padding-inline: 10px;
             display: flex;
@@ -48,12 +50,19 @@ body {
             }
         }
         .hero_container {
-            height: 88dvh;
-            background-color: blue;
+            height: 90dvh;
             display: flex;
+            justify-content: center;
+            text-align: center;
             align-items: center;
             padding-inline: 10px;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 98%), url('../assets/images/hero_image.jpg');
+            background-position: center;
+            background-size: cover;
             .hero_container_element_container {
+                h1, h2 {
+                    color: $white;
+                }
             }
         }
         .footer {
