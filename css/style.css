@@ -7,6 +7,7 @@
   font-weight: bold;
   font-size: 30px;
   margin-block: 0px;
+  cursor: default;
 }
 
 .panel_title {
@@ -80,9 +81,15 @@ body .parent_container .header nav ul a {
   margin-inline: 10px;
   text-decoration: none;
   font-size: 16px;
+  transition: 200ms ease-out;
 }
 body .parent_container .header nav ul a li {
+  text-align: center;
   list-style-type: none;
+}
+body .parent_container .header nav ul a:hover {
+  transition: 200ms ease-out;
+  font-weight: 700;
 }
 body .parent_container .hero_container {
   height: 92dvh;
@@ -119,7 +126,6 @@ body .parent_container .hero_container .hero_container_element_container .hero_c
   transition: 200ms ease-out;
 }
 body .parent_container .featured_products_container {
-  background-color: rgba(255, 0, 0, 0.1);
   padding: 10px 50px;
   display: grid;
 }

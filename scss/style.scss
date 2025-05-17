@@ -10,6 +10,7 @@
     font-weight: bold;
     font-size: 30px;
     margin-block: 0px;
+    cursor: default;
 }
 
 .panel_title {
@@ -81,8 +82,14 @@ body {
                         margin-inline: 10px;
                         text-decoration: none;
                         font-size: 16px;
+                        transition: 200ms ease-out;
                         li {
+                            text-align: center;
                             list-style-type: none;
+                        }
+                        &:hover {
+                            transition: 200ms ease-out;
+                            font-weight: 700;
                         }
                     }
                 }
@@ -125,7 +132,6 @@ body {
             }
         }
         .featured_products_container {
-            background-color: rgba($color: red, $alpha: .1);
             padding: 10px 50px;
             display: grid;
             // grid-template-columns: minmax();
