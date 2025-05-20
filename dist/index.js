@@ -1,5 +1,9 @@
-"use strict";
 var _a, _b;
+import { ProductList } from './products.js';
+import { productDetailsList } from './list.js';
+let list = new ProductList();
+list.addArrayToList(productDetailsList);
+console.log(list);
 (_a = document.querySelector('.hero_cta_button')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => {
     location.href = "#products_title";
 });
