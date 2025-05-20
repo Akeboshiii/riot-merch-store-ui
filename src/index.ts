@@ -9,7 +9,7 @@ console.log(list);
 let outputContainer = document.querySelector('.featured_products_container')
 
 if (outputContainer instanceof HTMLDivElement) {
-    outputContainer.innerHTML = list.generateHTML()
+    outputContainer.innerHTML = list.generateHTMLnotFull()
 }
 
 
