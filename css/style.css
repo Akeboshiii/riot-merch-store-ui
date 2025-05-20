@@ -29,6 +29,8 @@
   margin-block: 5px;
   font-size: 28px;
   font-weight: 600;
+  color: #1A1A1A;
+  text-align: center;
 }
 
 .product_image {
@@ -128,12 +130,14 @@ body .parent_container .hero_container .hero_container_element_container .hero_c
 body .parent_container .featured_products_container {
   padding: 10px 50px;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 324px));
+  justify-content: center;
+  gap: 20px;
 }
 body .parent_container .featured_products_container .product_card {
   display: grid;
-  grid-template-rows: 190px 1fr 40px 60px;
+  grid-template-rows: 190px 1fr 40px 40px 60px;
   height: 450px;
-  width: 330px;
   row-gap: 5px;
   border-radius: 24px;
   overflow: hidden;
@@ -149,6 +153,9 @@ body .parent_container .featured_products_container .product_card .product_info_
   color: #1A1A1A;
   text-align: center;
 }
+body .parent_container .featured_products_container .product_card .product_price_container {
+  color: #1A1A1A;
+}
 body .parent_container .featured_products_container .product_card .products_ratings_container {
   padding-inline: 10px;
   display: flex;
@@ -158,11 +165,16 @@ body .parent_container .featured_products_container .product_card .products_rati
 body .parent_container .featured_products_container .product_card .buy_now_button_container button {
   width: 100%;
   height: 100%;
-  background-color: skyblue;
+  background-color: #e86c00;
   border: none;
   font-size: 24px;
   font-weight: 650;
   cursor: pointer;
+  transition: 200ms ease-in;
+}
+body .parent_container .featured_products_container .product_card .buy_now_button_container button:hover {
+  background-color: #fb7f12;
+  transition: 200ms ease-out;
 }
 body .parent_container .footer {
   background-color: #1A1A1A;
