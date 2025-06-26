@@ -12,18 +12,6 @@ if (outputContainer instanceof HTMLDivElement) {
     outputContainer.innerHTML = list.generateHTMLnotFull()
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 document.querySelector('.hero_cta_button')?.addEventListener('click', () => {
     location.href = "#products_title"
 })
